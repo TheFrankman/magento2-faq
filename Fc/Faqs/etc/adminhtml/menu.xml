@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Fc_Faqs::faq_content" title="Faqs" module="Fc_Faqs" sortOrder="50" parent="Magento_Backend::content" resource="Fc_Faqs::faqs_content" />
+        <add id="Fc_Faqs::faq" title="Faqs" module="Fc_Faqs" sortOrder="0" parent="Fc_Faqs::faq_content" action="faqs/faq" resource="Fc_Faqs::faq"/>
+    </menu>
+</config>

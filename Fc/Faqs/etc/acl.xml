@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::content">
+                    <resource id="Fc_Faqs::faq_content" title="Faq" sortOrder="10" >
+                        <resource id="Fc_Faqs::faq" title="Faqs" sortOrder="40">
+                            <resource id="Fc_Faqs::save" title="Save Faq" sortOrder="10" />
+                            <resource id="Fc_Faqs::faq_delete" title="Delete Faq" sortOrder="20" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

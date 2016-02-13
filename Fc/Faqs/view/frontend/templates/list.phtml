@@ -1,0 +1,19 @@
+<?php /** @var $block \Fc\Faqs\Block\FaqsList */ ?>
+<h1><?php echo __('FAQS') ?></h1>
+<ul class="faqs-faq-list">
+    <?php /** @var $faq \Fc\Faqs\Model\Faq */ ?>
+    <?php foreach ($block->getFaqs() as $faq): ?>
+        <li class="faq-list-item">
+            <h3 class="faqs-faq-item-title">
+                <?php echo $faq->getTitle() ?>
+            </h3>
+
+            <div class="faq-item-content">
+                <?php echo $faq->getContent(); ?>
+            </div>
+            <div class="faq-item-meta">
+                <strong><?php echo __('Created at:') ?></strong> <?php echo $faq->getCreationTime() ?>
+            </div>
+        </li>
+    <?php endforeach; ?>
+</ul>
