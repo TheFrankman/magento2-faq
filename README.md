@@ -16,5 +16,6 @@ This is my first Magento 2 Module so there may be some issues and it's fairly ba
 - WYSIWYG Editor for content
 - Image upload
 - Configure by store view
+- FAQ Categories
 
 Enjoy
